@@ -1,0 +1,64 @@
+html {
+  height:100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Space Mono';
+  color: black;
+  min-height: 100%;
+}
+
+body.landing {
+  background-color: black;
+  margin: auto;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #24327a;
+  position: relative;
+}
+
+.navbar .logo {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.nav-btn {
+  border: none;
+  position: relative;
+  top: -20px;
+}
+
+.searchbar {
+  position: relative;
+  top: -20px;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+.sidebar {
+  background-color: #0e153b;
+  width: 208px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.homepage {
+  position: relative;
+  background-color: white;
+  min-height: 100px;
+  left: 208px;
+}
