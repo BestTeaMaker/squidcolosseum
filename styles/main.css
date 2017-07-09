@@ -3,6 +3,11 @@ html {
   font-size: 100%;
 }
 
+@font-face {
+  font-family: BebasKai;
+  src: url("BebasKai-Regular.otf");
+}
+
 body {
   font-family: 'Space Mono';
   color: black;
@@ -15,37 +20,42 @@ body.landing {
 }
 
 .navbar {
-  height: 50px;
   background-color: #24327a;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
 }
 
 .navbar .logo {
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 13px;
-  padding-bottom: 10px;
+  position: relative;
+  padding: 7px;
 }
 
 .nav-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn {
   border: none;
   position: relative;
-  top: -20px;
+  font-family: BebasKai;
+  font-size: 18px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .searchbar {
   position: relative;
-  top: -20px;
+  margin-left: auto;
+  margin-right: 7px;
 }
 
 input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 50%;
+  width: 250px;
 }
 
 .sidebar {
@@ -54,11 +64,14 @@ input[type=text]:focus {
   height: 100%;
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .homepage {
-  position: relative;
+  position: absolute;
   background-color: white;
-  min-height: 100px;
-  left: 208px;
+  left: 208;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
