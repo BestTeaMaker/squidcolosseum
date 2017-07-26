@@ -48,6 +48,10 @@ body.landing {
   margin-right: 50px;
 }
 
+.btn:hover {
+  color: cyan;
+}
+
 .searchbar {
   position: relative;
   margin-left: auto;
@@ -63,8 +67,28 @@ input[type=text] {
   width: 208px;
   height: 100%;
   position: absolute;
+  top: 41px;
   left: 0;
   z-index: 1;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.colosseum-link {
+  padding: 17px 20px 17px 20px;
+  top: 15px;
+  color: white;
+  font-family: BebasKai;
+  text-align: center;
+  font-size: 20px;
+  background-color: #6e090d;
+}
+
+.colosseum-link:hover{
+  background: url("../assets/images/DiscordColosseum.png") no-repeat;
+  background-size: cover;
 }
 
 .homepage {
@@ -74,4 +98,29 @@ input[type=text] {
   right: 0;
   height: 100%;
   width: 100%;
+}
+
+.main-menu {
+  color:white;
+  font-family: BebasKai;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.main-menu li {
+  padding: 10px 0 10px 0;
+}
+
+.main-menu-buttons-link {
+  vertical-align: middle;
+  padding-right: 15px;
+}
+
+.main-menu-buttons-line:hover {
+  color:#debd32;
 }
